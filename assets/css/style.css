@@ -382,6 +382,68 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Research Projects
+--------------------------------------------------------------*/
+.researchprojects .count-box {
+  padding: 30px 30px 25px 30px;
+  margin-top: 30px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background: #fff;
+}
+.researchprojects .count-box i {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  background: #0563bb;
+  color: #fff;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+}
+.researchprojects .count-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #011426;
+}
+.researchprojects .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+.researchprojects .card {
+  width: 150px;
+  border: 1px solid #EF9A9A;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.researchprojects .card-header {
+  color: #D32F2F;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid #EF9A9A;
+  background-color: #FFEBEE;
+  padding: 5px 10px;
+}
+.researchprojects .card-main {
+  display: flex;              /* Children use Flexbox */
+  flex-direction: column;     /* Rotate Axis to Vertical */
+  padding: 15px 0;            /* Add padding to the top/bottom */
+}
+
+
+/*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
 .skills .progress {
@@ -424,7 +486,7 @@ section {
   color: #45505b;
 }
 .resume .resume-item {
-  padding: 0 0 20px 20px;
+  padding: 0 0 50px 50px;
   margin-top: -2px;
   border-left: 2px solid #0563bb;
   position: relative;
@@ -602,7 +664,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Research Projects Details
+# researchprojects Details
 --------------------------------------------------------------*/
 .researchprojects-details {
   padding-top: 40px;
