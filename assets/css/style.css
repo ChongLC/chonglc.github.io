@@ -382,45 +382,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Facts
---------------------------------------------------------------*/
-.facts .count-box {
-  padding: 30px 30px 25px 30px;
-  margin-top: 30px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  background: #fff;
-}
-.facts .count-box i {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 24px;
-  background: #0563bb;
-  color: #fff;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 48px;
-  height: 48px;
-}
-.facts .count-box span {
-  font-size: 36px;
-  display: block;
-  font-weight: 600;
-  color: #011426;
-}
-.facts .count-box p {
-  padding: 0;
-  margin: 0;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-}
-
-/*--------------------------------------------------------------
 # Akills
 --------------------------------------------------------------*/
 .skills .progress {
@@ -507,25 +468,28 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Research Projects
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.researchprojects .researchprojects-item {
   margin-bottom: 30px;
 }
-.portfolio #portfolio-flters {
+.project-box {
+  padding: 20px;
+}
+.researchprojects #researchprojects-flters {
   padding: 0;
-  margin: 0 auto 25px auto;
+  margin: 0px auto 25px auto;
   list-style: none;
   text-align: center;
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
 }
-.portfolio #portfolio-flters li {
+.researchprojects #researchprojects-flters li {
   cursor: pointer;
   display: inline-block;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
@@ -533,20 +497,20 @@ section {
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.researchprojects #researchprojects-flters li:hover, .researchprojects #researchprojects-flters li.filter-active {
   color: #0563bb;
 }
-.portfolio #portfolio-flters li:last-child {
+.researchprojects #researchprojects-flters li:last-child {
   margin-right: 0;
 }
-.portfolio .portfolio-wrap {
+.researchprojects .researchprojects-wrap {
   transition: 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
-  background: rgba(69, 80, 91, 0.8);
+  background: #f5f5f5;
 }
-.portfolio .portfolio-wrap::before {
+.researchprojects .researchprojects-wrap::before {
   content: "";
   background: rgba(255, 255, 255, 0.7);
   position: absolute;
@@ -558,7 +522,7 @@ section {
   z-index: 2;
   opacity: 0;
 }
-.portfolio .portfolio-wrap .portfolio-info {
+.researchprojects .researchprojects-wrap .researchprojects-info {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -573,7 +537,7 @@ section {
   justify-content: center;
   align-items: center;
 }
-.portfolio .portfolio-wrap .portfolio-info::before {
+.researchprojects .researchprojects-wrap .researchprojects-info::before {
   display: block;
   content: "";
   width: 48px;
@@ -586,7 +550,7 @@ section {
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
-.portfolio .portfolio-wrap .portfolio-info::after {
+.researchprojects .researchprojects-wrap .researchprojects-info::after {
   display: block;
   content: "";
   width: 48px;
@@ -599,102 +563,84 @@ section {
   transition: all 0.5s ease 0s;
   z-index: 9994;
 }
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.researchprojects .researchprojects-wrap .researchprojects-info h4 {
   font-size: 20px;
   color: #45505b;
   font-weight: 600;
 }
-.portfolio .portfolio-wrap .portfolio-info p {
+.researchprojects .researchprojects-wrap .researchprojects-info p {
   color: #45505b;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
 }
-.portfolio .portfolio-wrap .portfolio-links {
+.researchprojects .researchprojects-wrap .researchprojects-links {
   text-align: center;
   z-index: 4;
 }
-.portfolio .portfolio-wrap .portfolio-links a {
-  color: #45505b;
-  margin: 0 2px;
-  font-size: 28px;
-  display: inline-block;
-  transition: 0.3s;
-}
-.portfolio .portfolio-wrap .portfolio-links a:hover {
+.researchprojects .researchprojects-wrap .researchprojects-links a:hover {
   color: #148af9;
 }
-.portfolio .portfolio-wrap:hover::before {
+.researchprojects .researchprojects-wrap:hover::before {
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   opacity: 1;
 }
-.portfolio .portfolio-wrap:hover .portfolio-info {
+.researchprojects .researchprojects-wrap:hover .researchprojects-info {
   opacity: 1;
 }
-.portfolio .portfolio-wrap:hover .portfolio-info::before {
+.researchprojects .researchprojects-wrap:hover .researchprojects-info::before {
   top: 15px;
   left: 15px;
 }
-.portfolio .portfolio-wrap:hover .portfolio-info::after {
+.researchprojects .researchprojects-wrap:hover .researchprojects-info::after {
   bottom: 15px;
   right: 15px;
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details
+# Research Projects Details
 --------------------------------------------------------------*/
-.portfolio-details {
+.researchprojects-details {
   padding-top: 40px;
 }
-.portfolio-details .portfolio-details-slider img {
+.researchprojects-details .researchprojects-details-slider img {
   width: 100%;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination {
+.researchprojects-details .researchprojects-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.researchprojects-details .researchprojects-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
-  opacity: 1;
+  opacity: 10;
   border: 1px solid #0563bb;
 }
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+.researchprojects-details .researchprojects-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0563bb;
 }
-.portfolio-details .portfolio-info {
+.researchprojects-details .researchprojects-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(69, 80, 91, 0.08);
 }
-.portfolio-details .portfolio-info h3 {
+.researchprojects-details .researchprojects-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #eee;
 }
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-.portfolio-details .portfolio-description h2 {
+.researchprojects-details .researchprojects-description h5 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.portfolio-details .portfolio-description p {
+.researchprojects-details .researchprojects-description p {
   padding: 0;
 }
 
