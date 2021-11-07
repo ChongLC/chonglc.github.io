@@ -538,6 +538,47 @@ section {
 .project-box {
   padding: 20px;
 }
+.researchprojects .researchprojects-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+.researchprojects .researchprojects-item1 {
+  padding: 0 0 10px 50px;
+  margin-top: -2px;
+  border-left: 2px solid #0563bb;
+  position: relative;
+}
+.researchprojects .researchprojects-item1 h5 {
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: #0563bb;
+  margin-bottom: 10px;
+}
+.researchprojects .researchprojects-item1 ul {
+  padding-left: 20px;
+}
+.researchprojects .researchprojects-item1 ul li {
+  padding-bottom: 10px;
+}
+.researchprojects .researchprojects-item1:last-child {
+  padding-bottom: 0;
+}
+.researchprojects .researchprojects-item1::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #0563bb;
+}
 .researchprojects #researchprojects-flters {
   padding: 0;
   margin: 0px auto 25px auto;
