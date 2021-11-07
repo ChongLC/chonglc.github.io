@@ -3,9 +3,9 @@
 <b>Languages - HTML | CSS | JavaScript</b>
 <br><b>Text Editor - Microsoft VS Code</b>
 <br>
-This is a fully responsive Portfolio Website of myself.<br> This website is created using BootstrapMade template with major modifications. 
+This is a fully responsive Portfolio Website of myself. This website is created using BootstrapMade template with major modifications. 
 
-This website can give you a short glimpse about myself which holds-
+This website can give you a short glimpse about myself, which holds:-
 * A "short and sweet" introduction of me in <b>HOME</b> section.
 * A brief information of myself in <b>ABOUT ME</b> section.
 * My academic journey and professional experiences in <b>RESUME</b> section.
