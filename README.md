@@ -10,7 +10,7 @@ This website can give you a short glimpse about myself, which holds:-
 * A brief information of myself in <b>ABOUT ME</b> section.
 * My academic journey and professional experiences in <b>RESUME</b> section.
 * My research interest and projects (including ongoing and past projects) in <b>RESEARCH PROJECTS</b> section. There is a sub-section, particularly to list out all my publications. 
-* My selected servises in various activities in <b>ACADEMIC SERVICES</b> section.
+* My selected services in various activities in <b>ACADEMIC SERVICES</b> section.
 
 ---
 ## Suggestion to me? Welcome!
