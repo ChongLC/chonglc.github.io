@@ -169,7 +169,7 @@
   }
 
   /**
-   * Porfolio isotope and filter
+   * researchprojects isotope and filter
    */
   window.addEventListener('load', () => {
     let researchprojectsContainer = select('.researchprojects-container');
@@ -196,6 +196,60 @@
       }, true);
     }
 
+  });
+
+  /**
+   * Tools isotope and filter
+   */
+  window.addEventListener('load', () => {
+    let toolsContainer = select('.tools-container');
+    if (toolsContainer) {
+      let toolsIsotope = new Isotope(toolsContainer, {
+        itemSelector: '.tools-item'
+      });
+
+      let toolsFilters = select('#tools-flters li', true);
+
+      on('click', '#tools-flters li', function(e) {
+        e.preventDefault();
+        toolsFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        toolsIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+        toolsIsotope.on('arrangeComplete', function() {
+          AOS.refresh()
+        });
+      }, true);
+    }
+
+  });
+
+  /**
+   * Initiate tools lightbox 
+   */
+  const toolsLightbox = GLightbox({
+    selector: '.tools-lightbox'
+  });
+
+  /**
+   * tools details slider
+   */
+  new Swiper('.tools-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
   });
 
   /**
