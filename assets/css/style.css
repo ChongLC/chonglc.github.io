@@ -528,6 +528,45 @@ section {
   border: 2px solid #0563bb;
 }
 
+.resume .icon {
+  margin: 0 auto 20px auto;
+  padding-top: 17px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  background: #cfecfa;
+}
+
+.resume .icon i {
+  font-size: 36px;
+  line-height: 1;
+  color: #0563bb;
+}
+
+.resume .icon span {
+  display: inline-block;
+  vertical-align: middle; /* Optional: Align the text vertically with the icon */
+}
+
+.resume .resume-link {
+  display: inline-block; /* Ensure the link is displayed inline */
+}
+
+.resume .resume-link .icon {
+  display: inline-block;
+  vertical-align: middle; /* Align the icon vertically with the text */
+  margin-right: 5px; /* Add some space between the icon and text */
+}
+
+.resume .resume-link .resume-text {
+  display: inline-block;
+  vertical-align: middle; /* Align the text vertically with the icon */
+  margin-left: 5px; /* Add some space between the icon and text */
+  transform: translateY(-8px);
+}
+
 /*--------------------------------------------------------------
 # Research Projects
 --------------------------------------------------------------*/
